@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Drawing Circle</title>
+    <meta name="description" content="Drawing SVG shapes">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <h3>SVG Bar</h3>
+    <svg width="50", height="50">
+        <circle cx="25", cy="25", r="25", style="fill:blue"/>
+    </svg>
+    <h3>D3 Bar</h3>
+    <script>
+        d3.select("body")
+        .append("svg")
+            .attr("width", 50)
+            .attr("height", 50)
+        .append("circle")
+            .attr("cx", 25)
+            .attr("cy",25)
+            .attr("r", 25)
+            .style("fill","purple");
+    </script>
+</body>
+</html>
